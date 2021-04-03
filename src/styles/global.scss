@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+}
+html,
+body {
+  max-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: radial-gradient(
+    at top left,
+    rgb(34, 34, 34) 0%,
+    rgb(15, 15, 15) 100%
+  );
+  background-repeat: no-repeat;
+}
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
+}
+.layout {
+  margin: 0 auto;
+}
+.button {
+  display: inline-block;
+  margin-left: 30px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+  padding: 5px 16px;
+  border-radius: 8px;
+  transition: 0.05s;
+  border: 3px solid #e29c7d;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  height: 70px;
+  border-bottom: 3px solid rgb(58, 58, 58);
+}
+nav .links {
+  display: flex;
+  align-items: center;
+}
+nav .links li {
+  list-style: none;
+}
+nav .logo {
+  max-width: 150px;
+  max-height: 70px;
+}
+nav .links a {
+  margin-left: 30px;
+  font-size: 18px;
+  transition: 0.1s;
+}
+nav .links a:hover {
+  border-bottom: 3px solid white;
+}
+nav .burger {
+  display: none;
+  cursor: pointer;
+}
+nav .burger div {
+  width: 23px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+  transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+  nav .burger {
+    display: block;
+  }
+  nav .links {
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    top: 90px;
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    transition: 0.5s ease;
+  }
+
+  nav .links a {
+    margin-left: 0;
+  }
+
+  nav .links.nav-active {
+    display: flex;
+  }
+
+  nav .nav-item-anim {
+    animation: nav-items-fade 1s ease forwards 0s;
+  }
+
+  nav .burger .line1.active {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  nav .burger .line2.active {
+    opacity: 0;
+  }
+
+  nav .burger .line3.active {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+}
+
+@keyframes nav-items-fade {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
