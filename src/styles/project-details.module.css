@@ -1,0 +1,30 @@
+table {
+  border-spacing: 20px;
+  margin: 0 auto;
+}
+th, td {
+  width: 200px;
+  overflow: hidden;
+}
+
+h2.title {
+  text-align: center;
+  margin-top: 40px;
+}
+h3.stack {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.html {
+  width: 70%;
+  margin: 0 auto;
+}
+.html h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.html p {
+  margin: 0;
+  font-size: 14px;
+}

@@ -10,8 +10,22 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, 
-    'gatsby-transformer-remark',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 200,
+              disableBgImage: true,
+              backgroundColor: 'none',
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -36,10 +50,10 @@ module.exports = {
     }
   ],
   siteMetadata: {
-    title: 'Autone',
-    company: 'Autone Software AB',
+    title: 'Devyne',
+    company: 'Devyne Software AB',
     description: 'Software development portfolio.',
     copyright: 'Copyright 2021',
-    contact: 'contact@autone.se'
+    contact: 'contact@devyne.se'
   }
 }

@@ -1,0 +1,78 @@
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+
+.projects div {
+  border-radius: 20px;
+  padding-top: 20px;
+}
+
+.projects a {
+  transition: 0.1s ease; 
+}
+.projects a:hover {
+  transform: translateY(-3px);
+}
+
+
+img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.projects div .text {
+  background: none;
+  background-color: rgba(0, 0, 0, 0.296);
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.projects div .text h3 {
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-bottom: 10px;
+}
+
+.projects div .text p {
+  color: rgba(255, 255, 255, 0.583);
+  margin: 0;
+  font-size: 14px;
+}
+
+.projects div div.platform {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+.projects div svg {
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,70 @@
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+p {
+  text-align: center;
+}
+p a {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+div.form_parent {
+  margin-top: 40px;
+  text-align: center;
+}
+
+div.form {
+  border: 1px solid white;
+  border-radius: 10px;
+  display: inline-block;
+  justify-content: center;
+  padding: 20px;
+  text-align: left;
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+input {
+  display: block;
+  width: 200px;
+  margin-bottom: 20px;
+  background-color: rgb(70, 70, 70);
+  border: 1px solid rgb(49, 49, 49);
+  border-radius: 5px;
+  padding: 5px;
+}
+textarea:focus, input:focus{
+  background-color: #e29b7d25;
+  border: 1px solid #e29c7d;
+  outline: none;
+}
+textarea {
+  display: block;
+  max-width: 70vw;
+  width: 500px;
+  height: 100px;
+  background-color: rgb(70, 70, 70);
+  border: 1px solid rgb(49, 49, 49);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 5px;
+}
+button {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  background-color: #e29c7d;
+  border: none;
+  color: #1f1f1f;
+  width: 150px;
+}
+.buttonParent {
+  text-align: center;
+}

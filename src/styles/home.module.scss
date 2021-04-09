@@ -1,0 +1,126 @@
+.header {
+  z-index: 0;
+  width: 100%;
+  height: 350px;
+  background-color: #1f1f1f;
+  background-image: url("/squares.svg");
+  background-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  max-width: 300px;
+  max-height: 300px;
+  height: 60%;
+  margin-right: 20px;
+}
+.header div {
+  width: 200px;
+}
+.typewriter {
+  font-family: "Courier";
+  font-weight: 300;
+  font-size: 50px;
+  position: relative;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0;
+  animation: typewriter 1s steps(7) 0.7s 1 normal both,
+    blinkTextCursor 800ms steps(44) infinite normal;
+}
+.typewriter span{
+  font-family: "Courier";
+  font-weight: 300;
+  font-size: 50px;
+  color:#F4D585;
+}
+.header h3 {
+  font-family: "Courier";
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin-top: 0;
+}
+
+main {
+  margin-top: 20px;
+  text-align: center;
+}
+main h1 {
+  text-align: center;
+  font-weight: 100;
+  margin: 0 10%;
+}
+main h1 .first {
+  color:#F4D585
+}
+main h1 .second {
+  color:#e29c7d;
+}
+main div {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  margin: 0 10%;
+}
+main .button {
+  position: relative;
+  appearance: none;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  background-color: #e29c7d;
+  
+  span {
+    position: relative;
+    pointer-events: none;
+    color: #1f1f1f;
+  }
+
+  &::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #ffffff4b, transparent);
+    transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
+  }
+
+  &:hover::before {
+    --size: 400px;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 4.2em;
+  }
+}
+@keyframes blinkTextCursor {
+  0% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  49% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  50% {
+    border-right-color: transparent;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
