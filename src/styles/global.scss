@@ -5,7 +5,8 @@
   font-family: "Trebuchet MS", sans-serif;
   color: rgb(221, 221, 221);
 }
-html, body {
+html,
+body {
   max-width: 100%;
   min-height: 100vh;
   background-color: #1f1f1f;
@@ -13,7 +14,8 @@ html, body {
 body {
   background: radial-gradient(
     at top left,
-    rgb(34, 34, 34) 0%,
+    // rgb(34, 34, 34) 0%,
+    #312520 0%,
     rgb(15, 15, 15) 100%
   );
   background-repeat: no-repeat;
@@ -39,7 +41,7 @@ p {
   transition: 0.05s;
   border: 2px solid #e29c7d;
 }
-div > nav > ul > li:nth-child(4) > a:hover{
+div > nav > ul > li:nth-child(4) > a:hover {
   background-color: #e29c7d;
   border: 2px solid #e29c7d;
   color: #1f1f1f;
@@ -166,7 +168,6 @@ footer .links {
 footer .links a {
   margin: 5vw;
   color: rgb(138, 138, 138);
-  
 }
 footer .links a:hover {
   color: rgb(206, 206, 206);
