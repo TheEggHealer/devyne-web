@@ -10,17 +10,19 @@ date: 2021-03-30 00:00:00 +0000
 images: projects/wish_together
 ---
 
-<!-- |                                                                  |                                                                  |                                                                  |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ![Hopper The Rabbit](../images/projects/wish_together/prev1.png) | ![Hopper The Rabbit](../images/projects/wish_together/prev2.png) | ![Hopper The Rabbit](../images/projects/wish_together/prev3.png) |
+<!--
+  To add images:
+  ![Hopper The Rabbit](../images/projects/...)
+ -->
 
-|                                                                  |                                                                  |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ![Hopper The Rabbit](../images/projects/wish_together/prev4.png) | ![Hopper The Rabbit](../images/projects/wish_together/prev5.png) | -->
+### About the app
 
-Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.
+Wish Together makes the hassle of organizing gift shopping for events and birthdays a lot easier. Create wishlists, invite your friends and family and start wishing!
 
-### Lorem ninja ipsum dolor
+In the wishlists, the invited users can the items they're planning on buying. These claims are not visible to the wishes. This makes it easier to see who buys what and reduces the chances of two people buying the same gifts.
 
-Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.
+By tapping on an item in the list, the users can chat with the wisher and ask for specific details about the item. The users also have the alternative to use a chat that's hidden from the wisher, where they can discuss who buys the item or if they want to split the cost for example.
+
+Group wishlists make it easier to plan events where multiple people are buying gifts for each other. It groups together everyone's wishlists into a single page where they can be easily viewed and managed. Perfect for christmas when many people buy gifts for eachother!
+
+The is only public on [google play](https://play.google.com/store/apps/details?id=com.jonathan.wishtogether) for now, it will be released for ios soon.

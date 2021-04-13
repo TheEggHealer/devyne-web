@@ -7,12 +7,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import Moment from 'moment'
 
 const ProjectDetails = ({ data }) => {
   console.log(data);
 
   const { html } = data.markdownRemark
-  const { title, stack } = data.markdownRemark.frontmatter
+  const { title, stack, date } = data.markdownRemark.frontmatter
   const images = data.allFile.nodes;
   var mouseDown = false;
   var dragging = false;
@@ -39,25 +40,26 @@ const ProjectDetails = ({ data }) => {
 
   return (
     <Layout>
-      <div className={styles.slide}>
-          <Slider {...settings}>
-          {
-            images.map((image, index) => {
-              return (
-                
-                <div className={styles.image}>
-                  <GatsbyImage style={{cursor: 'pointer'}}image={getImage(image)} alt="img" key={index} onMouseUp={(e) => handleClick(e, image.publicURL)} onMouseMove={(e) => { if(mouseDown) dragging=true }} onMouseDown={(e) => { mouseDown = true }} />
-                </div>
-                
-              )
-            })
-          }
-            
-          </Slider>
-        </div>
       <div className={styles.details}>
         <h2 className={styles.title}>{title}</h2>
         <h3 className={styles.stack}>{stack}</h3>
+        <h3 className={styles.date}>{Moment(date).format('D MMM yyyy')}</h3>
+        <div className={styles.slide}>
+            <Slider {...settings}>
+            {
+              images.map((image, index) => {
+                return (
+                  
+                  <div className={styles.image}>
+                    <GatsbyImage style={{cursor: 'pointer'}}image={getImage(image)} alt="img" key={index} onMouseUp={(e) => handleClick(e, image.publicURL)} onMouseMove={(e) => { if(mouseDown) dragging=true }} onMouseDown={(e) => { mouseDown = true }} />
+                  </div>
+                  
+                )
+              })
+            }
+              
+            </Slider>
+          </div>
         <div className={styles.html} dangerouslySetInnerHTML={{__html: html}}/>
       </div>
     </Layout>
@@ -73,6 +75,7 @@ export const query = graphql`
       frontmatter {
         title
         stack
+        date
       }
     }
     allFile(filter: {relativeDirectory: {eq: $dir}}) {

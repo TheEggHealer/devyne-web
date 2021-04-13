@@ -1,0 +1,139 @@
+div.me {
+  position: relative;
+  display: flex;
+  margin: 100px 15%;
+  font-size: 3vw;
+  animation: me-spawn 1s ease;
+
+  h1 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 1em;
+    color: #e8d98c;
+  }
+
+  article {
+    display: inline-block;
+  }
+
+  .portrait {
+    display: block;
+    min-width: 30%;
+    width: 30%;
+    margin-right: 7%;
+    border-radius: 20px;
+  }
+}
+
+div.devyne {
+  position: relative;
+  display: flex;
+  margin: 100px 15%;
+  font-size: 3vw;
+  animation: devyne-spawn 2s ease;
+
+  h1 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 1em;
+    color: #e8d98c;
+  }
+
+  article {
+    display: inline-block;
+  }
+
+  svg {
+    display: inline-block;
+    min-width: 30%;
+    width: 30%;
+    min-height: 30%;
+    height: 30%;
+    margin-left: 7%;
+  }
+}
+
+article p {
+  margin: 0;
+  margin-top: 1em;
+  text-align: left;
+  font-size: 0.42em;
+
+  span {
+    color: #e29c7d;
+  }
+}
+
+.readMore {
+  display: inline;
+  cursor: pointer;
+  color: #e8d98c;
+}
+
+//Different screen sizes,
+@media screen and (max-width: 850px) {
+  div.me {
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin: 30px 15%;
+
+    .portrait {
+      display: block;
+      min-width: 80%;
+      width: 80%;
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  }
+
+  div.devyne {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 30px;
+    margin: 30px 15%;
+
+    svg {
+      display: inline-block;
+      min-width: 80%;
+      width: 80%;
+      min-height: 80%;
+      height: 80%;
+      margin-left: 0;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+  }
+}
+
+@media screen and (min-width: 851px) {
+  .readMore {
+    display: none;
+  }
+}
+
+//Animations
+@keyframes me-spawn {
+  from {
+    right: -60px;
+    opacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes devyne-spawn {
+  0% {
+    left: -60px;
+    opacity: 0;
+  }
+  50% {
+    left: -60px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}

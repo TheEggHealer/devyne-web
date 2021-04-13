@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import Bottom from '../images/bottom.svg'
+import Github from '../images/media-github.svg'
 
 export default function Footer() {
   return (
@@ -11,6 +11,7 @@ export default function Footer() {
         <li><Link to="/projects">Portfolio</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
+      <a href="https://github.com/TheEggHealer" className="social-media"><Github /></a>
       <p>Copyright 2021 © Devyne Software AB</p>
     </footer>
   )

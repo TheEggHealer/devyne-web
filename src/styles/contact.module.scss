@@ -4,6 +4,7 @@ h1 {
 }
 p {
   text-align: center;
+  margin: 10px 15px;
 }
 p a {
   color: cornflowerblue;
@@ -36,7 +37,8 @@ input {
   border-radius: 5px;
   padding: 5px;
 }
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   background-color: #e29b7d25;
   border: 1px solid #e29c7d;
   outline: none;
@@ -67,4 +69,42 @@ button {
 }
 .buttonParent {
   text-align: center;
+}
+
+.button {
+  position: relative;
+  appearance: none;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  background-color: #e29c7d;
+
+  span {
+    position: relative;
+    pointer-events: none;
+    color: #1f1f1f;
+  }
+
+  &::before {
+    --size: 0;
+    content: "";
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #ffffff4b, transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+
+  &:hover::before {
+    --size: 400px;
+  }
 }

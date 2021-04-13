@@ -15,22 +15,29 @@ h2.title {
 h3.stack {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 10px;
+}
+h3.date {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 0.7em;
+  font-weight: normal;
 }
 .html {
   max-width: 800px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .html h3 {
-  margin-top: 20px;
-  margin-bottom: 5px;
-  font-weight: 900;
+  font-size: 26px;
+  margin-top: 1em;
+  font-weight: bold;
 }
 .html p {
   margin: 0;
+  margin-top: 1em;
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
 }
 
 div.slide {
@@ -47,4 +54,11 @@ div.image {
 }
 div.image:focus {
   outline: none;
+}
+
+/* Different screen sizes */
+@media screen and (max-width: 850px) {
+  .html p {
+    font-size: 14px;
+  }
 }

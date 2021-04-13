@@ -6,8 +6,9 @@ h1 {
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  margin: 80px 20px;
+  grid-gap: 40px;
+  margin: 80px 40px;
+  justify-items: center;
 }
 
 .projects div {
@@ -16,12 +17,14 @@ h1 {
 }
 
 .projects a {
-  transition: 0.1s ease; 
+  width: 30vw;
+  min-width: 300px;
+  max-width: 400px;
+  transition: 0.1s ease;
 }
 .projects a:hover {
   transform: translateY(-3px);
 }
-
 
 img {
   display: block;
@@ -64,15 +67,14 @@ img {
   margin: 5px 5px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1360px) {
   .projects {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 735px) {
   .projects {
     grid-template-columns: 1fr;
   }
 }
-

@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import React, { useState } from 'react'
-import Logo from '../images/autone_home.svg'
+import Logo from '../images/devyne-home.svg'
 
 export default function Navbar() {
 
@@ -18,7 +18,7 @@ export default function Navbar() {
       <Link to="/"><Logo className="logo" /></Link>
       <ul className={showNav ? "links nav-active" : "links"}>
         <li><Link to="/" className={animation ? "nav-item-anim" : ""}>Home</Link></li>
-        <li><Link to="/about" className={animation ? "nav-item-anim" : ""}>About</Link></li>
+        <li><Link to="/about" className={animation ? "nav-item-anim" : ""}>About Me</Link></li>
         <li><Link to="/projects" className={animation ? "nav-item-anim" : ""}>Portfolio</Link></li>
         <li><Link to="/contact" className={animation ? "button nav-item-anim" : "button"}>Contact</Link></li>
       </ul>

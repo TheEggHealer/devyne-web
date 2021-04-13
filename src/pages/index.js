@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
-import Logo from '../images/logo.svg'
+import Hero from '../images/hero-image.svg'
 import * as styles from '../styles/home.module.scss'
 
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
   }
 
   return <Layout>
-    <header className={styles.header}>
-      <Logo className={styles.logo} />
+    {/* <header className={styles.header}>
+      <Hero className={styles.logo}/>  
       <div>
-        <h2 className={styles.typewriter}><span>dev</span>yne.</h2>
+        <h2 className={styles.typewriter}><span>Dev</span>yne.</h2>
         <h3>software.</h3>
       </div>
     </header>
@@ -29,6 +29,22 @@ export default function Home() {
       <Link to="/projects" className={styles.button} onMouseMove={(e) => handleMouseMove(e)}>
         <span>Check out my portfolio!</span>
       </Link>
-    </main>
+    </main> */}
+
+    <header>
+      <div className={styles.type}>
+        <div className={styles.head}>
+          <h1><span>App and Web,</span><br/>Developer and<br/>Designer</h1>
+        </div>
+        <p>I’m here to help you and your project<br/>reach more people.</p>
+        <Link to="/projects" className={styles.button} onMouseMove={(e) => handleMouseMove(e)}>
+          <span>Check out my portfolio!</span>
+        </Link>
+      </div>
+      <div className={styles.hero}>
+        <Hero />
+      </div>
+    </header>
+
     </Layout>
 }

@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: rgb(221, 221, 221);
 }
 html,
@@ -51,10 +52,11 @@ div > nav > ul > li:nth-child(4) > a:hover {
 nav {
   z-index: 2;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
-  border-bottom: 2px solid rgb(58, 58, 58);
+  margin: 0 15%;
+  padding-top: 15px;
 }
 nav .links {
   display: flex;
@@ -69,7 +71,7 @@ nav .logo {
 }
 nav .links a {
   margin-left: 30px;
-  font-size: 14px;
+  font-size: 16px;
   transition: 0.1s;
 }
 nav .links a:hover {
@@ -88,7 +90,7 @@ nav .burger div {
   transition: all 0.2s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   nav .burger {
     display: block;
   }
@@ -143,11 +145,14 @@ nav .burger div {
 
 /* Content */
 div .content {
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 
 /* Footer */
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   max-width: 100%;
   clear: both;
@@ -156,6 +161,7 @@ footer {
   width: 100%;
   background-color: #1f1f1f;
   padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: auto;
   //transform: translateY(100%);
 }
@@ -176,4 +182,13 @@ footer p {
   color: rgb(138, 138, 138);
   font-size: 12px;
   text-align: center;
+  margin: 0;
+}
+footer .social-media {
+  display: inline-block;
+  margin: 10px 0;
+  opacity: 0.3;
+}
+footer .social-media:hover {
+  opacity: 0.7;
 }
