@@ -118,7 +118,7 @@ nav .burger div {
   }
 
   nav .nav-item-anim {
-    animation: nav-items-fade 1s ease forwards 0s;
+    animation: nav-items-fade 1s ease;
   }
 
   nav .burger .line1.active {
@@ -136,10 +136,10 @@ nav .burger div {
 
 @keyframes nav-items-fade {
   from {
-    opacity: 0%;
+    opacity: 0;
   }
   to {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
