@@ -19,7 +19,7 @@ images: projects/wish_together
 
 Wish Together makes the hassle of organizing gift shopping for events and birthdays a lot easier. Create wishlists, invite your friends and family and start wishing!
 
-In the wishlists, the invited users can the items they're planning on buying. These claims are not visible to the wishes. This makes it easier to see who buys what and reduces the chances of two people buying the same gifts.
+In the wishlists, the invited users can claim the items they're planning on buying. These claims are not visible to the wishes. This makes it easier to see who buys what and reduces the chances of two people buying the same gifts.
 
 By tapping on an item in the list, the users can chat with the wisher and ask for specific details about the item. The users also have the alternative to use a chat that's hidden from the wisher, where they can discuss who buys the item or if they want to split the cost for example.
 
