@@ -29,7 +29,6 @@ export default function About({ data }) {
       </Helmet>
       <div className={styles.me}>
         <GatsbyImage image={getImage(image)} alt="Portrait" className={styles.portrait} />
-        <div className={styles.portrait}></div>
         <article>
           <h1>This is me</h1>
           <div className={styles.content}>
