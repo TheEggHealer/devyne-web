@@ -12,7 +12,7 @@ export default function Footer() {
         <li><Link to="/contact">Contact</Link></li>
       </ul>
       <a href="https://github.com/TheEggHealer" className="social-media"><Github /></a>
-      <p>Copyright 2021 © Devyne Software AB</p>
+      <p>Copyright 2021 © Devyne Software</p>
     </footer>
   )
 }
