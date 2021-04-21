@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/Layout"
 import Hero from '../images/hero-image.svg'
 import * as styles from '../styles/home.module.scss'
@@ -31,6 +32,9 @@ export default function Home() {
       </Link>
     </main> */}
 
+    <Helmet>
+      <title>Devyne Software</title>
+    </Helmet>
     <header>
       <div className={styles.type}>
         <div className={styles.head}>

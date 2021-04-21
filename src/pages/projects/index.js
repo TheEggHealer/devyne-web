@@ -1,6 +1,7 @@
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import Layout from '../../components/Layout'
 import AndroidIcon from '../../images/android_icon.svg'
 import IOSIcon from '../../images/ios_icon.svg'
@@ -13,6 +14,9 @@ const Projects = ({data}) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Portfolio</title>
+      </Helmet>
       <h1>My projects</h1>
       <div className={styles.projects}>
         {projects.map(project => {

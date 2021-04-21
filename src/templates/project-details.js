@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Moment from 'moment'
+import { Helmet } from 'react-helmet';
 
 const ProjectDetails = ({ data }) => {
   console.log(data);
@@ -40,6 +41,9 @@ const ProjectDetails = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className={styles.details}>
         <h2 className={styles.title}>{title}</h2>
         <h3 className={styles.stack}>{stack}</h3>

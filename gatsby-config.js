@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, 
     'gatsby-plugin-sass',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -51,9 +52,9 @@ module.exports = {
   ],
   siteMetadata: {
     title: 'Devyne',
-    company: 'Devyne Software AB',
+    company: 'Devyne Software',
     description: 'Software development portfolio.',
     copyright: 'Copyright 2021',
-    contact: 'contact@devyne.se'
+    contact: 'jonathan.runeke@hotmail.com'
   }
 }

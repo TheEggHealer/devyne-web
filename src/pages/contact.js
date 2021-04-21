@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout'
 import * as styles from '../styles/contact.module.scss'
 
@@ -14,9 +15,13 @@ export default function contact() {
 
   return (
     <Layout>
-      <h1>(WIP) Contact me</h1>
+      <Helmet>
+        <title>Contact me</title>
+      </Helmet>
+      <h1>Contact me</h1>
       <div>
-        <p>You can contact me at <a href="mailto:contact@devyne.se">contact@devyne.se</a>, or type your message below.</p>
+        <p>You can contact me at <a href="mailto:jonathan.runeke@hotmail.com">jonathan.runeke@hotmail.com</a></p>
+        <p className={styles.error}>The form below does not work yet!</p>
       </div>
       <div className={styles.form_parent}>
         <div className={styles.form}>
