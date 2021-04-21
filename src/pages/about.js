@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react'
 import Layout from '../components/Layout'
@@ -28,7 +28,8 @@ export default function About({ data }) {
         <title>About</title>
       </Helmet>
       <div className={styles.me}>
-        <GatsbyImage image={getImage(image)} alt="Portrait" className={styles.portrait} />
+        {/* <GatsbyImage image={getImage(image)} alt="Portrait" className={styles.portrait} /> */}
+        <div className={styles.portrait}></div>
         <article>
           <h1>This is me</h1>
           <div className={styles.content}>
@@ -54,7 +55,7 @@ export default function About({ data }) {
               readMoreDevyne && (
                 <div className="more">
                   <p>I’m here to help you with designing and building the perfect app or website with your users experience in mind.</p>
-                  <p>If you’re intrested in hiring me, or have any questions, send an email or message me directly through the contact form.</p>   
+                  <p>If you’re intrested in hiring me, or have any questions, send an email or message me directly through the <Link to="/contact">contact form</Link>.</p>   
                 </div>
               )
             }
